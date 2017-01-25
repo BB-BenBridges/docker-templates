@@ -5,7 +5,7 @@
   <Name>Metabase</Name>
   <Description>Simple access to Metabase through a Docker container. Metabase is the easy, open source way for everyone in your company to ask questions and learn from data.</Description>
   <Overview>Simple access to Metabase through a Docker container. Metabase is the easy, open source way for everyone in your company to ask questions and learn from data.</Overview>
-  <Support></Support>
+  <Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
   <Registry>https://hub.docker.com/r/metabase/metabase/</Registry>
   <GitHub>https://github.com/metabase/metabase</GitHub>
   <Repository>metabase/metabase</Repository>
