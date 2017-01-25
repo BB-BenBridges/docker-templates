@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0">
 <Container version="2">
   <Beta>True</Beta>
   <Category>Tools: Status:Beta</Category>
   <Name>Metabase</Name>
   <Description>
-  Simple access to Metabase through a Docker container. [br]
-  Metabase is the easy, open source way for everyone in your company to ask questions and learn from data. [br]
-  <a href="http://www.metabase.com/">metabase.com</a> [br]
+  Simple access to Metabase through a Docker container. Metabase is the easy, open source way for everyone in your company to ask questions and learn from data. <a href="http://www.metabase.com/">metabase.com</a>
   <Description/>
   <Overview>
-  Simple access to Metabase through a Docker container. [br]
-  Metabase is the easy, open source way for everyone in your company to ask questions and learn from data. [br]
-  <a href="http://www.metabase.com/">metabase.com</a> [br]
+  Simple access to Metabase through a Docker container. Metabase is the easy, open source way for everyone in your company to ask questions and learn from data. <a href="http://www.metabase.com/">metabase.com</a>
   </Overview>
   <Support><Support/>
   <Registry>https://hub.docker.com/r/metabase/metabase/</Registry>
