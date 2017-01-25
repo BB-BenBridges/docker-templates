@@ -7,7 +7,7 @@
   <Overview>Simple access to Metabase through a Docker container. Metabase is the easy, open source way for everyone in your company to ask questions and learn from data. <a href="http://www.metabase.com/">metabase.com</a></Overview>
   <Support></Support>
   <Registry>https://hub.docker.com/r/metabase/metabase/</Registry>
-  <GitHub>https://github.com/metabase/metabase</Github>
+  <GitHub>https://github.com/metabase/metabase</GitHub>
   <Repository>metabase/metabase</Repository>
   <Networking>
     <Mode>bridge</Mode>
