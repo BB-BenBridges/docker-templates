@@ -9,6 +9,7 @@
   <Registry>https://hub.docker.com/r/metabase/metabase/</Registry>
   <GitHub>https://github.com/metabase/metabase</GitHub>
   <Repository>metabase/metabase</Repository>
+  <Network>bridge</Network>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
