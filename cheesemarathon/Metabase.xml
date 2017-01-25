@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Beta>True</Beta>
+  <Category>Tools: Status:Beta</Category>
+  <Name>Metabase</Name>
+  <Description>
+  Simple access to Metabase through a Docker container. [br]
+  Metabase is the easy, open source way for everyone in your company to ask questions and learn from data. [br]
+  <a href="http://www.metabase.com/">metabase.com</a> [br]
+  <Description/>
+  <Overview>
+  Simple access to Metabase through a Docker container. [br]
+  Metabase is the easy, open source way for everyone in your company to ask questions and learn from data. [br]
+  <a href="http://www.metabase.com/">metabase.com</a> [br]
+  </Overview>
+  <Support><Support/>
+  <Registry>https://hub.docker.com/r/metabase/metabase/</Registry>
+  <GitHub>https://github.com/metabase/metabase<Github/>
+  <Repository>metabase/metabase</Repository>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Value>/tmp/metabase.db</Value>
+      <Name>MB_DB_FILE</Name>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/Metabase</HostDir>
+      <ContainerDir>/tmp</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <Icon>http://seeklogo.com/images/M/metabase-logo-AC22E4DDE5-seeklogo.com.png</Icon>
+  <Config Name="Web UI Port" Target="3000" Default="" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Key 1" Target="MB_DB_FILE" Default="/tmp/metabase.db" Mode="" Description="allow external db host" Type="Variable" Display="advanced" Required="true" Mask="false">/tmp/metabase.db</Config>
+  <Config Name="Config Path" Target="/tmp" Default="/mnt/user/appdata/Metabase" Mode="rw" Description="Container Path: /tmp" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/Metabase</Config>
+</Container>
