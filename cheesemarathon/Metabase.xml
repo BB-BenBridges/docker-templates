@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <Beta>True</Beta>
-  <Category>Tools: Status:Beta</Category>
+  <Beta>False</Beta>
+  <Category>Tools:</Category>
   <Name>Metabase</Name>
   <Description>Simple access to Metabase through a Docker container. Metabase is the easy, open source way for everyone in your company to ask questions and learn from data.</Description>
   <Overview>Simple access to Metabase through a Docker container. Metabase is the easy, open source way for everyone in your company to ask questions and learn from data.</Overview>
