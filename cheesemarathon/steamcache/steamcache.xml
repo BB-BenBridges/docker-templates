@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Beta>False</Beta>
+  <Category>Backup: Tools:</Category>
+  <Name>steamcache</Name>
+  <Description>SteamCache.Net provides the ability to reduce your Internet bandwidth consumption in scenarios where you have multiple PC gamers sharing the same Internet connection. Through the use of easy to deploy docker containers we aim to make it easy for you to get a local cache of steam's content servers up and running quickly.<Description/>
+  <Overview/>
+  <Support/>
+  <Registry/>
+  <GitHub>https://steamcache.github.io/</GitHub>
+  <Repository>steamcache/steamcache</Repository>
+  <Network>host</Network>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>80</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Steam/</HostDir>
+      <ContainerDir>/data/cache</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/cheesemarathon/steamcache/steamcache.png</Icon>
+  <Config Name="Web UI Port" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="steam cache" Target="/data/cache" Default="" Mode="rw" Description="Container Path: /data/cache" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Steam/</Config>
+</Container>
