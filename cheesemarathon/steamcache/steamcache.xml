@@ -3,10 +3,10 @@
   <Beta>False</Beta>
   <Category>Backup: Tools:</Category>
   <Name>steamcache</Name>
-  <Description>SteamCache.Net provides the ability to reduce your Internet bandwidth consumption in scenarios where you have multiple PC gamers sharing the same Internet connection. Through the use of easy to deploy docker containers we aim to make it easy for you to get a local cache of steam's content servers up and running quickly.</Description>
+  <Description>This docker container provides a a depot-caching proxy server for Steam content. For any network with more than one PC gamer in connected this will drastically reduce internet bandwidth consumption.</Description>
   <Overview/>
   <Support/>
-  <Registry/>
+  <Registry>https://hub.docker.com/r/steamcache/steamcache/</Registry>
   <GitHub>https://steamcache.github.io/</GitHub>
   <Repository>steamcache/steamcache</Repository>
   <Network>host</Network>
