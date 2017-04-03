@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <Beta>False</Beta>
-  <Category>Tools:</Category>
-  <Name>Metabase</Name>
-  <Description>Simple access to Metabase through a Docker container. Metabase is the easy, open source way for everyone in your company to ask questions and learn from data.</Description>
-  <Overview>Simple access to Metabase through a Docker container. Metabase is the easy, open source way for everyone in your company to ask questions and learn from data.</Overview>
-  <Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
-  <Registry>https://hub.docker.com/r/metabase/metabase/</Registry>
-  <GitHub>https://github.com/metabase/metabase</GitHub>
-  <Repository>metabase/metabase</Repository>
+  <Name>WebBrowser</Name>
+  <Repository>consol/centos-xfce-vnc</Repository>
+  <Registry>https://hub.docker.com/r/consol/centos-xfce-vnc/</Registry>
   <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Overview/>
+  <Category>Tools: Other:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <Description/>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>3000</HostPort>
-        <ContainerPort>3000</ContainerPort>
+        <HostPort>5901</HostPort>
+        <ContainerPort>5901</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
+  <Data/>
   <Environment>
     <Variable>
-      <Value>/tmp/metabase.db</Value>
-      <Name>MB_DB_FILE</Name>
+      <Value>cheese123</Value>
+      <Name>VNC_PW</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1920x1080</Value>
+      <Name>VNC_RESOLUTION</Name>
+      <Mode/>
     </Variable>
   </Environment>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/Metabase</HostDir>
-      <ContainerDir>/tmp</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <WebUI>http://[IP]:[PORT:3000]</WebUI>
-  <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/cheesemarathon/MetabaseLogo.png</Icon>
-  <Config Name="Web UI Port" Target="3000" Default="" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
-  <Config Name="Key 1" Target="MB_DB_FILE" Default="/tmp/metabase.db" Mode="" Description="allow external db host" Type="Variable" Display="advanced" Required="true" Mask="false">/tmp/metabase.db</Config>
-  <Config Name="Config Path" Target="/tmp" Default="/mnt/user/appdata/Metabase" Mode="rw" Description="Container Path: /tmp" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/Metabase</Config>
+  <Config Name="VNC" Target="5901" Default="5901" Mode="tcp" Description="VNC Port" Type="Port" Display="always" Required="true" Mask="false">5901</Config>
+  <Config Name="VNC Password" Target="VNC_PW" Default="" Mode="" Description="Container Variable: VNC_PW" Type="Variable" Display="always" Required="true" Mask="true">cheese123</Config>
+  <Config Name="VNC Resolution" Target="VNC_RESOLUTION" Default="" Mode="" Description="Container Variable: VNC_RESOLUTION" Type="Variable" Display="always" Required="true" Mask="false">1920x1080</Config>
 </Container>
