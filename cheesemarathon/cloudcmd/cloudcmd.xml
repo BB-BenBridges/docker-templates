@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Category>Tools:</Category>
+  <Name>CloudCommander</Name>
+  <Description>A simple web file browser with a built in text editor and archive compress/extract abilities.&#xD;
+&#xD;
+Instructions:&#xD;
+Set Port to the port you want to be able to access from. Defaults to 8765&#xD;
+Set Mount Point to the directory you want to be able to access in the browser. Defaults to /mnt/user, all shares&#xD;
+</Description>
+  <Overview>A simple web file browser with a built in text editor and archive compress/extract abilities.&#xD;
+&#xD;
+Instructions:&#xD;
+Set Port to the port you want to be able to access from. Defaults to 8765&#xD;
+Set Mount Point to the directory you want to be able to access in the browser. Defaults to /mnt/user, all shares&#xD;
+</Overview>
+  <Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
+  <Registry>https://hub.docker.com/r/coderaiser/cloudcmd/</Registry>
+  <GitHub>https://github.com/coderaiser/cloudcmd</GitHub>
+  <Repository>coderaiser/cloudcmd</Repository>
+  <Network>bridge</Network>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8765</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user</HostDir>
+      <ContainerDir>/UNRAID</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/cloudcmd</HostDir>
+      <ContainerDir>/root</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8765]</WebUI>
+  <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/cheesemarathon/cloudcmd/cloudcmdLogo.png</Icon>
+  <Config Name="Mount Path" Target="/UNRAID" Default="" Mode="rw" Description="Container Path: /UNRAID" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
+  <Config Name="Port" Target="8000" Default="8765" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8765</Config>
+  <Config Name="appdata" Target="/root" Default="" Mode="rw" Description="Container Path: /root" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/cloudcmd</Config>
+</Container>
