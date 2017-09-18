@@ -30,7 +30,7 @@
     </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/cheesemarathon/images/steamcache.png</Icon>
+  <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/steamcache.png</Icon>
   <Config Name="Web Port" Target="80" Default="" Mode="tcp" Description="Container Port: 80" Type="Port" Display="advanced" Required="true" Mask="false">80</Config>
   <Config Name="steam cache" Target="/data/cache" Default="" Mode="rw" Description="Cached data location" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/steamcache/</Config>
 </Container>
