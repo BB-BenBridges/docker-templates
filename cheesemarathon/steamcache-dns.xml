@@ -9,7 +9,7 @@
   <Support/>
   <Registry>https://hub.docker.com/r/steamcache/steamcache-dns/</Registry>
   <GitHub>https://steamcache.github.io/</GitHub>
-  <Repository>steamcache/steamcache-dns</Repository>
+  <Repository>steamcache/steamcache-dns:latest</Repository>
   <Network>host</Network>
   <Networking>
     <Mode>host</Mode>
