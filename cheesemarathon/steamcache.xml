@@ -24,7 +24,7 @@
   <Environment/>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/Steam/</HostDir>
+      <HostDir>/mnt/user/appdata/steamcache/</HostDir>
       <ContainerDir>/data/cache</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
