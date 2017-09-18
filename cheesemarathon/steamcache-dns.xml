@@ -4,7 +4,7 @@
   <Beta>False</Beta>
   <Category>Backup: Tools:</Category>
   <Name>steamcache-dns</Name>
-  <Description>This docker container provides a a depot-caching proxy server for Steam content. For any network with more than one PC gamer connected, this will drastically reduce internet bandwidth consumption.</Description>
+  <Description>This docker container provides DNS entries for *.cs.steampowered.com to be used in conjunction with a steamcache server.</Description>
   <Overview/>
   <Support/>
   <Registry>https://hub.docker.com/r/steamcache/steamcache-dns/</Registry>
