@@ -4,8 +4,20 @@
   <Beta>False</Beta>
   <Category>Backup: Tools:</Category>
   <Name>steamcache-dns</Name>
-  <Description>This docker container provides DNS entries for *.cs.steampowered.com to be used in conjunction with a steamcache server.</Description>
-  <Overview/>
+  <Description>
+[b]steamcache-dns[/b] provides DNS entries for *.cs.steampowered.com to be used in conjunction with a steamcache server[br/]
+[br/]
+[b]Please use the instructions at the link below to install this container![/b][br/]
+(http://lime-technology.com/forum/index.php?topic=55931.0)[br/]
+[br/]
+  </Description>
+  <Overview>
+[b]steamcache-dns[/b] provides DNS entries for *.cs.steampowered.com to be used in conjunction with a steamcache server[br/]
+[br/]
+[b]Please use the instructions at the link below to install this container![/b][br/]
+(http://lime-technology.com/forum/index.php?topic=55931.0)[br/]
+[br/]
+  </Overview>
   <Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
   <Registry>https://hub.docker.com/r/steamcache/steamcache-dns/</Registry>
   <GitHub>https://steamcache.github.io/</GitHub>
