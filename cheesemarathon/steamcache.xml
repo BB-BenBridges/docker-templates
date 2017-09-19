@@ -5,13 +5,19 @@
 	<Category>Backup: Tools:</Category>
 	<Name>steamcache</Name>
 	<Description>
-	This docker container 
 [b]steamcache[/b] provides a depot-caching proxy server for Steam content. For any network with more than one PC gamer connected, this will drastically reduce internet bandwidth consumption[br/]
 [br/]
+[b]Please use the instructions at the link below to install this container![/b][br/]
 (http://lime-technology.com/forum/index.php?topic=55931.0)[br/]
 [br/]
 	</Description>
-	<Overview/>
+	<Overview>
+[b]steamcache[/b] provides a depot-caching proxy server for Steam content. For any network with more than one PC gamer connected, this will drastically reduce internet bandwidth consumption[br/]
+[br/]
+[b]Please use the instructions at the link below to install this container![/b][br/]
+(http://lime-technology.com/forum/index.php?topic=55931.0)[br/]
+[br/]
+	</Overview>
 	<Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
 	<Registry>https://hub.docker.com/r/steamcache/steamcache/</Registry>
 	<GitHub>https://steamcache.github.io/</GitHub>
