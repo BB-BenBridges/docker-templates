@@ -6,7 +6,7 @@
   <Name>steamcache</Name>
   <Description>This docker container provides a depot-caching proxy server for Steam content. For any network with more than one PC gamer connected, this will drastically reduce internet bandwidth consumption.</Description>
   <Overview/>
-  <Support>https://forums.lime-technology.com/topic/54183-support-cheesemarathons-repo/</Support>
+  <Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
   <Registry>https://hub.docker.com/r/steamcache/steamcache/</Registry>
   <GitHub>https://steamcache.github.io/</GitHub>
   <Repository>steamcache/generic:latest</Repository>
