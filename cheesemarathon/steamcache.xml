@@ -9,7 +9,7 @@
   <Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
   <Registry>https://hub.docker.com/r/steamcache/steamcache/</Registry>
   <GitHub>https://steamcache.github.io/</GitHub>
-  <Repository>steamcache/generic:latest</Repository>
+  <Repository>steamcache/steamcache:latest</Repository>
   <Network>bridge</Network>
   <Networking>
     <Mode>bridge</Mode>
