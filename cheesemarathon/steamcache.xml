@@ -5,25 +5,10 @@
 	<Category>Backup: Tools:</Category>
 	<Name>steamcache</Name>
 	<Description>
-[b]What is Calibre?[/b][br/]
+	This docker container 
+[b]steamcache[/b] provides a depot-caching proxy server for Steam content. For any network with more than one PC gamer connected, this will drastically reduce internet bandwidth consumption[br/]
 [br/]
-[b]calibre[/b] is a free and open source e-book library management application developed by users of e-books for users of e-books. It has a cornucopia of features divided into the following main categories:[br/]
-[br/]
-*  Library Management[br/]
-*  E-book conversion[br/]
-*  Syncing to e-book reader devices[br/]
-*  Downloading news from the web and converting it into e-book form[br/]
-*  Comprehensive e-book viewer[br/]
-*  Content server for online access to your book collection[br/]
-*  E-book editor for the major e-book formats[br/]
-[br/]
-(http://calibre-ebook.com)[br/]
-[br/]
-[b]Container Volumes:[/b][br/]
-* /opt/Library : Calibre library storage volume[br/]
-[br/]
-[b]Network Ports:[/b][br/]
-* 8000 : Default port for Calibre server[br/]
+(http://lime-technology.com/forum/index.php?topic=55931.0)[br/]
 [br/]
 	</Description>
 	<Overview/>
