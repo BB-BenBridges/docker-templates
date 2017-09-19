@@ -6,7 +6,7 @@
   <Name>steamcache-dns</Name>
   <Description>This docker container provides DNS entries for *.cs.steampowered.com to be used in conjunction with a steamcache server.</Description>
   <Overview/>
-  <Support/>
+  <Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
   <Registry>https://hub.docker.com/r/steamcache/steamcache-dns/</Registry>
   <GitHub>https://steamcache.github.io/</GitHub>
   <Repository>steamcache/steamcache-dns:latest</Repository>
