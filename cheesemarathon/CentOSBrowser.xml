@@ -39,7 +39,7 @@
 		</Variable>
 	</Environment>
 	<Data/>
-	<WebUI/>
+	<WebUI>http://[IP]:[PORT:6901]</WebUI>
 	<Icon/>
 	<Config Name="VNC" Target="5901" Default="5901" Mode="tcp" Description="VNC Port" Type="Port" Display="always" Required="true" Mask="false">5901</Config>
 	<Config Name="VNC Web" Target="6901" Default="6901" Mode="tcp" Description="VNC Web Port" Type="Port" Display="always" Required="true" Mask="false">6901</Config>
