@@ -4,10 +4,11 @@
   <Beta>False</Beta>
   <Category>Backup: Tools:</Category>
   <Name>steamcache</Name>
-  <Description>This docker container provides a depot-caching proxy server for Steam content. For any network with more than one PC gamer connected, this will drastically reduce internet bandwidth consumption.[br/]
-    [br/]
-    Please use the instructions at the link below  to install this container![br/]
-    (https://forums.lime-technology.com/topic/54183-support-cheesemarathons-repo/?do=findComment&comment=590728)[br/]
+  <Description>
+This docker container provides a depot-caching proxy server for Steam content. For any network with more than one PC gamer connected, this will drastically reduce internet bandwidth consumption.[br/]
+[br/]
+Please use the instructions at the link below  to install this container![br/]
+(https://forums.lime-technology.com/topic/54183-support-cheesemarathons-repo/?do=findComment&comment=590728)[br/]
   </Description>
   <Overview/>
   <Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
