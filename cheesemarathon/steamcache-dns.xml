@@ -35,7 +35,7 @@
   </Environment>
   <Data/>
   <WebUI/>
-  <Icon>http://www.thekelleys.org.uk/dnsmasq/images/icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/steamcache-dns.png</Icon>
   <Config Name="steamcache-ip" Target="steamcache-ip" Default="111.111.111.111" Mode="" Description="IP Address of your unRAID server" Type="Variable" Display="always" Required="true" Mask="false">111.111.111.111</Config>
   <Config Name="DNS UDP Port" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
   <Config Name="DNS TCP Port" Target="53" Default="53" Mode="tcp" Description="Container Port: 53" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
