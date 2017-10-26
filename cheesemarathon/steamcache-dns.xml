@@ -22,19 +22,14 @@
   <Registry>https://hub.docker.com/r/steamcache/steamcache-dns/</Registry>
   <GitHub>https://steamcache.github.io/</GitHub>
   <Repository>steamcache/steamcache-dns:latest</Repository>
-  <Network>host</Network>
+  <Network>bridge</Network>
   <Networking>
-    <Mode>host</Mode>
+    <Mode>bridge</Mode>
     <Publish>
       <Port>
         <HostPort>53</HostPort>
         <ContainerPort>53</ContainerPort>
         <Protocol>udp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>53</HostPort>
-        <ContainerPort>53</ContainerPort>
-        <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
@@ -50,5 +45,4 @@
   <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/steamcache-dns.png</Icon>
   <Config Name="steamcache-ip" Target="steamcache-ip" Default="111.111.111.111" Mode="" Description="IP Address of your unRAID server" Type="Variable" Display="always" Required="true" Mask="false">111.111.111.111</Config>
   <Config Name="DNS UDP Port" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
-  <Config Name="DNS TCP Port" Target="53" Default="53" Mode="tcp" Description="Container Port: 53" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
 </Container>
