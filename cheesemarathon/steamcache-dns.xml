@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Beta>False</Beta>
   <Category>Backup: Tools:</Category>
   <Name>steamcache-dns</Name>
@@ -36,13 +36,13 @@
   <Environment>
     <Variable>
       <Value>111.111.111.111</Value>
-      <Name>steamcache-ip</Name>
+      <Name>STEAMCACHE_IP</Name>
       <Mode/>
     </Variable>
   </Environment>
   <Data/>
   <WebUI/>
   <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/steamcache-dns.png</Icon>
-  <Config Name="steamcache-ip" Target="steamcache-ip" Default="111.111.111.111" Mode="" Description="IP Address of your unRAID server" Type="Variable" Display="always" Required="true" Mask="false">111.111.111.111</Config>
+  <Config Name="STEAMCACHE_IP" Target="STEAMCACHE_IP" Default="111.111.111.111" Mode="" Description="IP Address of your unRAID server" Type="Variable" Display="always" Required="true" Mask="false">111.111.111.111</Config>
   <Config Name="DNS UDP Port" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
 </Container>
