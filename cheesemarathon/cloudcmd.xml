@@ -35,7 +35,7 @@ Set Mount Point to the directory you want to be able to access in the browser. D
 	</Networking>
 	<Data>
 		<Volume>
-			<HostDir>/mnt/fs</HostDir>
+			<HostDir>/mnt/user</HostDir>
 			<ContainerDir>/UNRAID</ContainerDir>
 			<Mode>rw</Mode>
 		</Volume>
