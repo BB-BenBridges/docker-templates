@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Beta>False</Beta>
+  <Category>Tools:</Category>
+  <Name>OAuth2 Proxy</Name>
+  <Description/>
+  <Overview/>
+  <Support/>
+  <Registry>https://hub.docker.com/r/cheesemarathon/oauth2-proxy</Registry>
+  <GitHub>https://github.com/bitly/oauth2_proxy</GitHub>
+  <Repository>cheesemarathon/oauth2</Repository>
+  <Network>bridge</Network>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>4180</HostPort>
+        <ContainerPort>4180</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/oauth2_test/</HostDir>
+      <ContainerDir>/etc/oauth2/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI/>
+  <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/OAuth2-Proxy.png</Icon>
+  <Config Name="HTTP PORT" Target="4180" Default="" Mode="tcp" Description="Container Port: 4180" Type="Port" Display="always" Required="true" Mask="false">4180</Config>
+  <Config Name="Host Path 1" Target="/etc/oauth2/" Default="" Mode="rw" Description="Container Path: /etc/oauth2/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/oauth2_test/</Config>
+</Container>
