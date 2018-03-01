@@ -23,7 +23,7 @@
   <Environment/>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/oauth2_test/</HostDir>
+      <HostDir>/mnt/user/appdata/oauth2/</HostDir>
       <ContainerDir>/etc/oauth2/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
