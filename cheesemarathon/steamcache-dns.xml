@@ -22,9 +22,9 @@
   <Registry>https://hub.docker.com/r/steamcache/steamcache-dns/</Registry>
   <GitHub>https://steamcache.github.io/</GitHub>
   <Repository>steamcache/steamcache-dns:latest</Repository>
-  <Network>bridge</Network>
+  <Network>br0</Network>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>br0</Mode>
     <Publish>
       <Port>
         <HostPort>53</HostPort>
