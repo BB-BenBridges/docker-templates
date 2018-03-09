@@ -39,6 +39,11 @@
       <Name>STEAMCACHE_IP</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>8.8.8.8</Value>
+      <Name>UPSTREAM_DNS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Data/>
   <WebUI/>
