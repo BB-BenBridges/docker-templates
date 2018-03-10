@@ -31,7 +31,7 @@
 	<GitHub>https://steamcache.github.io/</GitHub>
 	<Repository>steamcache/generic:latest</Repository>
 	<Network>br0</Network>
-	<MyIP>192.168.1.50</MyIP>
+	<MyIP></MyIP>
 	<Networking>
 		<Mode>br0</Mode>
 		<Publish>
