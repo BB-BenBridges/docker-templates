@@ -5,10 +5,10 @@
   <Name>OAuth2 Proxy</Name>
   <Description>A reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.&#xD;
 &#xD;
-Please visit &amp;lt;&amp;gt; for install / setup instructions</Description>
+Please visit support thread for install / setup instructions</Description>
   <Overview>A reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.&#xD;
 &#xD;
-Please visit &amp;lt;&amp;gt; for install / setup instructions</Overview>
+Please visit support thread for install / setup instructions</Overview>
   <Support>https://lime-technology.com/forums/topic/54183-support-cheesemarathons-repo/</Support>
   <Registry>https://hub.docker.com/r/cheesemarathon/oauth2-proxy</Registry>
   <GitHub>https://github.com/bitly/oauth2_proxy</GitHub>
