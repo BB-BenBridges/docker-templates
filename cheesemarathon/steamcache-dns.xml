@@ -36,11 +36,6 @@
   <Environment>
     <Variable>
       <Value>192.168.1.50</Value>
-      <Name>STEAMCACHE_IP</Name>
-      <Mode/>
-    </Variable>
-    <Variable>
-      <Value>192.168.1.50</Value>
       <Name>LANCACHE_IP</Name>
       <Mode/>
     </Variable>
@@ -93,7 +88,6 @@
   <Data/>
   <WebUI/>
   <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/steamcache-dns.png</Icon>
-  <Config Name="STEAMCACHE_IP" Target="STEAMCACHE_IP" Default="" Mode="" Description="IP Address of cache container" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="LANCACHE_IP" Target="LANCACHE_IP" Default="" Mode="" Description="IP Address of cache container" Type="Variable" Display="always" Required="true" Mask="false"></Config>
   <Config Name="DNS UDP Port" Target="53" Default="53" Mode="udp" Description="DNS port, don't change!" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
   <Config Name="UPSTREAM_DNS" Target="UPSTREAM_DNS" Default="" Mode="" Description="Container Variable: UPSTREAM_DNS" Type="Variable" Display="advanced" Required="true" Mask="false">8.8.8.8</Config>
