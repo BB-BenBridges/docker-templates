@@ -50,4 +50,5 @@
   <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/steamcache-dns.png</Icon>
   <Config Name="STEAMCACHE_IP" Target="STEAMCACHE_IP" Default="111.111.111.111" Mode="" Description="IP Address of your unRAID server" Type="Variable" Display="always" Required="true" Mask="false">111.111.111.111</Config>
   <Config Name="DNS UDP Port" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
+  <Config Name="UPSTREAM_DNS" Target="UPSTREAM_DNS" Default="" Mode="" Description="Container Variable: UPSTREAM_DNS" Type="Variable" Display="advanced" Required="true" Mask="false">8.8.8.8</Config>
 </Container>
