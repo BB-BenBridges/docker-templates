@@ -35,8 +35,13 @@
   </Networking>
   <Environment>
     <Variable>
-      <Value>111.111.111.111</Value>
+      <Value>192.168.1.50</Value>
       <Name>STEAMCACHE_IP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>192.168.1.50</Value>
+      <Name>LANCACHE_IP</Name>
       <Mode/>
     </Variable>
     <Variable>
@@ -44,11 +49,60 @@
       <Name>UPSTREAM_DNS</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>USE_GENERIC_CACHE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DISABLE_FRONTIER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DISABLE_ORIGIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DISABLE_RIOT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DISABLE_STEAM</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DISABLE_UPLAY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DISABLE_BLIZZARD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DISABLE_WINDOWS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Data/>
   <WebUI/>
   <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/steamcache-dns.png</Icon>
-  <Config Name="STEAMCACHE_IP" Target="STEAMCACHE_IP" Default="111.111.111.111" Mode="" Description="IP Address for steamcache container" Type="Variable" Display="always" Required="true" Mask="false">111.111.111.111</Config>
-  <Config Name="DNS UDP Port" Target="53" Default="53" Mode="udp" Description="Container Port: 53" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
+  <Config Name="STEAMCACHE_IP" Target="STEAMCACHE_IP" Default="" Mode="" Description="IP Address of cache container" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="LANCACHE_IP" Target="LANCACHE_IP" Default="" Mode="" Description="IP Address of cache container" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="DNS UDP Port" Target="53" Default="53" Mode="udp" Description="DNS port, don't change!" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
   <Config Name="UPSTREAM_DNS" Target="UPSTREAM_DNS" Default="" Mode="" Description="Container Variable: UPSTREAM_DNS" Type="Variable" Display="advanced" Required="true" Mask="false">8.8.8.8</Config>
+  <Config Name="USE_GENERIC_CACHE" Target="USE_GENERIC_CACHE" Default="" Mode="" Description="Must be set to true to use generic cache" Type="Variable" Display="advanced" Required="true" Mask="false">true</Config>
+  <Config Name="DISABLE_FRONTIER" Target="DISABLE_FRONTIER" Default="" Mode="" Description="Set to true to disable frontier caching" Type="Variable" Display="advanced-hide" Required="false" Mask="false"/>
+  <Config Name="DISABLE_ORIGIN" Target="DISABLE_ORIGIN" Default="" Mode="" Description="Set to true to disable origin caching" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="DISABLE_RIOT" Target="DISABLE_RIOT" Default="" Mode="" Description="Set to true to disable riot caching" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="DISABLE_STEAM" Target="DISABLE_STEAM" Default="" Mode="" Description="Set to true to disable steam caching" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="DISABLE_UPLAY" Target="DISABLE_UPLAY" Default="" Mode="" Description="Set to true to disable uplay caching" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="DISABLE_BLIZZARD" Target="DISABLE_BLIZZARD" Default="" Mode="" Description="Set to true to disable blizzard caching" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="DISABLE_WINDOWS" Target="DISABLE_WINDOWS" Default="" Mode="" Description="Set to true to disable windows update caching" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
