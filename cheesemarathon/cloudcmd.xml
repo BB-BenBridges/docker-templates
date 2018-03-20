@@ -22,6 +22,7 @@ Set Mount Point to the directory you want to be able to access in the browser. D
 	<Registry>https://hub.docker.com/r/coderaiser/cloudcmd/</Registry>
 	<GitHub>https://github.com/coderaiser/cloudcmd</GitHub>
 	<Repository>coderaiser/cloudcmd</Repository>
+	<ExtraParams>-u 99:100</ExtraParams>
 	<Network>bridge</Network>
 	<Networking>
 		<Mode>bridge</Mode>
