@@ -14,6 +14,7 @@
 	Frontier Launchpad (Elite Dangerous, Planet Coaster)
 	Uplay (Ubisoft)
 	Windows Updates
+	Please see https://squishedmooo.com/?p=1 for install instructions! You will need them!
 	</Description>
 	<Overview>
 	This docker container provides a caching proxy server for game download content. For any network with more than one PC gamer connected, this will drastically reduce internet bandwidth consumption.
@@ -25,6 +26,7 @@
 	Frontier Launchpad (Elite Dangerous, Planet Coaster)
 	Uplay (Ubisoft)
 	Windows Updates
+	Please see https://squishedmooo.com/?p=1 for install instructions! You will need them!
 	</Overview>
 	<Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
 	<Registry>https://hub.docker.com/r/steamcache/generic/</Registry>
