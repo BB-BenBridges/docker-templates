@@ -8,38 +8,39 @@
 	This docker container provides a caching proxy server for game download content. For any network with more than one PC gamer connected, this will drastically reduce internet bandwidth consumption.
 	This container is designed to support any game that uses HTTP and also supports HTTP range requests (used by Origin). This should make it suitable for:
 	Steam (Valve)
-	Origin (EA Games) - Not working right now
+	Origin (EA Games)
 	Riot Games (League of Legends)
 	Battle.net (Hearthstone, Starcraft 2, Overwatch)
 	Frontier Launchpad (Elite Dangerous, Planet Coaster)
 	Uplay (Ubisoft)
 	Windows Updates
 	Please see https://squishedmooo.com/?p=1 for install instructions! You will need them!
+	This container should be used in conjunction with SteamcacheDNS and SNIProxy.
 	</Description>
 	<Overview>
 	This docker container provides a caching proxy server for game download content. For any network with more than one PC gamer connected, this will drastically reduce internet bandwidth consumption.
 	This container is designed to support any game that uses HTTP and also supports HTTP range requests (used by Origin). This should make it suitable for:
 	Steam (Valve)
-	Origin (EA Games) - Not working right now
+	Origin (EA Games)
 	Riot Games (League of Legends)
 	Battle.net (Hearthstone, Starcraft 2, Overwatch)
 	Frontier Launchpad (Elite Dangerous, Planet Coaster)
 	Uplay (Ubisoft)
 	Windows Updates
 	Please see https://squishedmooo.com/?p=1 for install instructions! You will need them!
+	This container should be used in conjunction with SteamcacheDNS and SNIProxy.
 	</Overview>
 	<Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
 	<Registry>https://hub.docker.com/r/steamcache/generic/</Registry>
 	<GitHub>https://steamcache.github.io/</GitHub>
 	<Repository>steamcache/generic:latest</Repository>
-	<Network>br0</Network>
-	<MyIP></MyIP>
+	<Network>bridge</Network>
 	<Networking>
-		<Mode>br0</Mode>
+		<Mode>bridge</Mode>
 		<Publish>
 			<Port>
 				<HostPort>80</HostPort>
-				<ContainerPort/>
+				<ContainerPort>80</ContainerPort>
 				<Protocol>tcp</Protocol>
 			</Port>
 		</Publish>
@@ -77,7 +78,7 @@
 	<Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/steamcache.png</Icon>
 	<Config Name="data" Target="/data/cache" Default="/mnt/user/appdata/gen-cache/data" Mode="rw" Description="Location to store the cached files" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/gen-cache/data</Config>
 	<Config Name="Logs" Target="/data/logs" Default="/mnt/user/appdata/gen-cache/logs" Mode="rw" Description="Location to store the cache logs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/gen-cache/logs</Config>
-	<Config Name="Default Port" Target="" Default="80" Mode="tcp" Description="Container Port: Must be 80!" Type="Port" Display="advanced" Required="true" Mask="false">80</Config>
+	<Config Name="Default Port" Target="80" Default="80" Mode="tcp" Description="Container Port: Must be 80!" Type="Port" Display="advanced" Required="true" Mask="false">80</Config>
 	<Config Name="CACHE_MEM_SIZE" Target="CACHE_MEM_SIZE" Default="500m" Mode="" Description="Memory size for the cache" Type="Variable" Display="advanced" Required="true" Mask="false">500m</Config>
 	<Config Name="CACHE_DISK_SIZE" Target="CACHE_DISK_SIZE" Default="500g" Mode="" Description="Max size for the cache" Type="Variable" Display="advanced" Required="true" Mask="false">500g</Config>
 	<Config Name="CACHE_MAX_AGE" Target="CACHE_MAX_AGE" Default="3650d" Mode="" Description="Max age for files in the cache" Type="Variable" Display="advanced" Required="true" Mask="false">3650d</Config>

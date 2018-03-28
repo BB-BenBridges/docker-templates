@@ -5,11 +5,11 @@
 	<Category>Backup: Tools:</Category>
 	<Name>SteamcacheDNS</Name>
 	<Description>
-	steamcache-dns provides DNS entries for *.cs.steampowered.com and other download URLs to be used in conjunction with a generic-cache server
+	SteamcacheDNS provides DNS entries for *.cs.steampowered.com and other download URLs to be used in conjunction with a GenericCache server
 	Please see https://squishedmooo.com/?p=1 for install instructions! You will need them!
 	</Description>
 	<Overview>
-	steamcache-dns provides DNS entries for *.cs.steampowered.com and other download URLs to be used in conjunction with a generic-cache server
+	SteamcacheDNS provides DNS entries for *.cs.steampowered.com and other download URLs to be used in conjunction with a GenericCache server
 	Please see https://squishedmooo.com/?p=1 for install instructions! You will need them!
 	</Overview>
 	<Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
