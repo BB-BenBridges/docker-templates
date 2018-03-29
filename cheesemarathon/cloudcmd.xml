@@ -46,9 +46,17 @@ Set Mount Point to the directory you want to be able to access in the browser. D
 			<Mode>rw</Mode>
 		</Volume>
 	</Data>
+	<Environment>
+		<Variable>
+			<Value>/root</Value>
+			<Name>HOME</Name>
+			<Mode/>
+		</Variable>
+	</Environment>
 	<WebUI>http://[IP]:[PORT:8765]</WebUI>
 	<Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/cloudcmdLogo.png</Icon>
 	<Config Name="Mount Path" Target="/UNRAID" Default="" Mode="rw" Description="Container Path: /UNRAID" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
 	<Config Name="Port" Target="8000" Default="8765" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8765</Config>
 	<Config Name="appdata" Target="/root" Default="" Mode="rw" Description="Container Path: /root" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/cloudcmd</Config>
+	<Config Name="HOME - Dont Change!" Target="HOME" Default="" Mode="" Description="Container Variable: HOME" Type="Variable" Display="advanced" Required="true" Mask="false">/root</Config>
 </Container>
