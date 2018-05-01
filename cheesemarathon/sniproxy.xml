@@ -4,6 +4,9 @@
 	<Beta>False</Beta>
 	<Category>Backup: Tools:</Category>
 	<Name>SNIProxy</Name>
+    <DonateText>Buy Me a Coffee</DonateText>
+    <DonateLink>https://ko-fi.com/I2I0CW9G</DonateLink>
+    <DonateImg>https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0</DonateImg>
 	<Description>
 	When running a LAN Cache and overriding DNS entries, there are some services including the Origin launcher which will try and use HTTPS to talk to one of the hostnames that are being overridden.
 	This breaks updates to the Origin client. The solution is to run this container SNI Proxy. This accepts the HTTPS requests, looks at the host being requested and sends the request on to the correct server.

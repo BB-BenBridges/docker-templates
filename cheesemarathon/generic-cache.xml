@@ -4,6 +4,9 @@
 	<Beta>False</Beta>
 	<Category>Backup: Tools:</Category>
 	<Name>GenericCache</Name>
+    <DonateText>Buy Me a Coffee</DonateText>
+    <DonateLink>https://ko-fi.com/I2I0CW9G</DonateLink>
+    <DonateImg>https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0</DonateImg>
 	<Description>
 	This docker container provides a caching proxy server for game download content. For any network with more than one PC gamer connected, this will drastically reduce internet bandwidth consumption.
 	This container is designed to support any game that uses HTTP and also supports HTTP range requests (used by Origin). This should make it suitable for:

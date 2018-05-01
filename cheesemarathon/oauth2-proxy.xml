@@ -1,39 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <Beta>False</Beta>
-  <Category>Tools: Network:Proxy Network:Other</Category>
-  <Name>OAuth2 Proxy</Name>
-  <Description>A reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.&#xD;
+    <Beta>False</Beta>
+    <Category>Tools: Network:Proxy Network:Other</Category>
+    <Name>OAuth2 Proxy</Name>
+    <DonateText>Buy Me a Coffee</DonateText>
+    <DonateLink>https://ko-fi.com/I2I0CW9G</DonateLink>
+    <DonateImg>https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0</DonateImg>
+    <Description>A reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.&#xD;
 &#xD;
 Please visit support thread for install / setup instructions</Description>
-  <Overview>A reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.&#xD;
+    <Overview>A reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.&#xD;
 &#xD;
 Please visit support thread for install / setup instructions</Overview>
-  <Support>https://lime-technology.com/forums/topic/54183-support-cheesemarathons-repo/</Support>
-  <Registry>https://hub.docker.com/r/cheesemarathon/oauth2-proxy</Registry>
-  <GitHub>https://github.com/bitly/oauth2_proxy</GitHub>
-  <Repository>cheesemarathon/oauth2-proxy</Repository>
-  <Network>bridge</Network>
-  <Networking>
-    <Mode>bridge</Mode>
-    <Publish>
-      <Port>
-        <HostPort>4180</HostPort>
-        <ContainerPort>4180</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-    </Publish>
-  </Networking>
-  <Environment/>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/user/appdata/oauth2/</HostDir>
-      <ContainerDir>/etc/oauth2/</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <WebUI/>
-  <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/OAuth2-Proxy.png</Icon>
-  <Config Name="HTTP PORT" Target="4180" Default="" Mode="tcp" Description="Container Port: 4180" Type="Port" Display="always" Required="true" Mask="false">4180</Config>
-  <Config Name="Host Path 1" Target="/etc/oauth2/" Default="" Mode="rw" Description="Container Path: /etc/oauth2/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/oauth2_test/</Config>
+    <Support>https://lime-technology.com/forums/topic/54183-support-cheesemarathons-repo/</Support>
+    <Registry>https://hub.docker.com/r/cheesemarathon/oauth2-proxy</Registry>
+    <GitHub>https://github.com/bitly/oauth2_proxy</GitHub>
+    <Repository>cheesemarathon/oauth2-proxy</Repository>
+    <Network>bridge</Network>
+    <Networking>
+        <Mode>bridge</Mode>
+        <Publish>
+            <Port>
+                <HostPort>4180</HostPort>
+                <ContainerPort>4180</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
+    <Environment/>
+    <Data>
+        <Volume>
+            <HostDir>/mnt/user/appdata/oauth2/</HostDir>
+            <ContainerDir>/etc/oauth2/</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <WebUI/>
+    <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/OAuth2-Proxy.png</Icon>
+    <Config Name="HTTP PORT" Target="4180" Default="" Mode="tcp" Description="Container Port: 4180" Type="Port" Display="always" Required="true" Mask="false">4180</Config>
+    <Config Name="Host Path 1" Target="/etc/oauth2/" Default="" Mode="rw" Description="Container Path: /etc/oauth2/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/oauth2_test/</Config>
 </Container>

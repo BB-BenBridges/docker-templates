@@ -4,6 +4,9 @@
 	<Beta>False</Beta>
 	<Category>Backup: Tools:</Category>
 	<Name>SteamcacheDNS</Name>
+    <DonateText>Buy Me a Coffee</DonateText>
+    <DonateLink>https://ko-fi.com/I2I0CW9G</DonateLink>
+    <DonateImg>https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0</DonateImg>
 	<Description>
 	SteamcacheDNS provides DNS entries for *.cs.steampowered.com and other download URLs to be used in conjunction with a GenericCache server
 	Please see https://squishedmooo.com/?p=1 for install instructions! You will need them!

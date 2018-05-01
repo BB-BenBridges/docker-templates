@@ -4,6 +4,9 @@
 	<Beta>False</Beta>
 	<Category>Tools: Other:</Category>
 	<Name>VNC Web Browser</Name>
+    <DonateText>Buy Me a Coffee</DonateText>
+    <DonateLink>https://ko-fi.com/I2I0CW9G</DonateLink>
+    <DonateImg>https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0</DonateImg>
 	<Description>This container provides a VNC connection, via web or VNC client, to an xfce desktop with access to both FireFox and Chrome browsers</Description>
 	<Overview>This container provides a VNC connection, via web or VNC client, to an xfce desktop with access to both FireFox and Chrome browsers</Overview>
 	<Support>http://lime-technology.com/forum/index.php?topic=55931.0</Support>
