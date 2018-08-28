@@ -15,7 +15,7 @@
     </Overview>
     <Support>https://lime-technology.com/forums/topic/54183-support-cheesemarathons-repo/</Support>
     <Registry>https://hub.docker.com/_/ghost/</Registry>
-    <GitHub>hhttps://github.com/TryGhost/Ghost</GitHub>
+    <GitHub>https://github.com/TryGhost/Ghost</GitHub>
     <Project>https://docs.ghost.org/docs</Project>
     <Repository>ghost</Repository>
     <Network>bridge</Network>
