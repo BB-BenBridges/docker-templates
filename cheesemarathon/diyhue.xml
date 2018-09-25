@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+    <Privileged>false</Privileged>
+    <Beta>False</Beta>
+    <Category>HomeAutomation:</Category>
+    <Name>diyHue</Name>
+    <DonateText>Buy me a coffee</DonateText>
+    <DonateLink>https://ko-fi.com/I2I0CW9G</DonateLink>
+    <DonateImg>https://az743702.vo.msecnd.net/cdn/kofi2.png</DonateImg>
+    <Description>
+    diyHue emulates a Phillips Hue bridge allowing you to controll other smart lights and bulbs with the Hue ecosystem.
+    Find more info at the diyHue GitHub wiki: https://github.com/mariusmotea/diyHue/wiki
+    To setup just set an IP address in the network settings
+    </Description>
+    <Overview>
+    diyHue emulates a Phillips Hue bridge allowing you to controll other smart lights and bulbs with the Hue ecosystem.
+    Find more info at the diyHue GitHub wiki: https://github.com/mariusmotea/diyHue/wiki
+    To setup just set an IP address in the network settings
+    </Overview>
+    <Support>https://lime-technology.com/forums/topic/54183-support-cheesemarathons-repo/</Support>
+    <Registry>https://hub.docker.com/r/diyhue/core/</Registry>
+    <GitHub>https://github.com/mariusmotea/diyHue</GitHub>
+    <Repository>diyhue/core:latest</Repository>
+    <Network>br0</Network>
+    <MyIP></MyIP>
+    <Networking>
+        <Mode>br0</Mode>
+        <Publish>
+            <Port>
+                <HostPort>80</HostPort>
+                <ContainerPort/>
+                <Protocol>tcp</Protocol>
+            </Port>
+            <Port>
+                <HostPort>443</HostPort>
+                <ContainerPort>443</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+            <Port>
+                <HostPort>1900</HostPort>
+                <ContainerPort/>
+                <Protocol>udp</Protocol>
+            </Port>
+            <Port>
+                <HostPort>2100</HostPort>
+                <ContainerPort/>
+                <Protocol>udp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
+    <Data>
+        <Volume>
+            <HostDir>/mnt/user/appdata/diyHue</HostDir>
+            <ContainerDir>/opt/hue-emulator/export/</ContainerDir>
+            <Mode>rw</Mode>
+        </Volume>
+    </Data>
+    <WebUI>http://[IP]:[PORT:80]</WebUI>
+    <Labels/>
+    <Config Name="App Data" Target="/opt/hue-emulator/export/" Default="" Mode="rw" Description="Container Path: /opt/hue-emulator/export/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/diyHue</Config>
+    <Config Name="80" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
+    <Config Name="443" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">443</Config>
+    <Config Name="1900" Target="1900" Default="1900" Mode="udp" Description="Container Port: 1900" Type="Port" Display="always" Required="true" Mask="false">1900</Config>
+    <Config Name="2100" Target="2100" Default="2100" Mode="udp" Description="Container Port: 2100" Type="Port" Display="always" Required="true" Mask="false">2100</Config>
+</Container>
