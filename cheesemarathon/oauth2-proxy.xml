@@ -38,5 +38,5 @@ Please visit support thread for install / setup instructions</Overview>
     <WebUI/>
     <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/OAuth2-Proxy.png</Icon>
     <Config Name="HTTP PORT" Target="4180" Default="" Mode="tcp" Description="Container Port: 4180" Type="Port" Display="always" Required="true" Mask="false">4180</Config>
-    <Config Name="Host Path 1" Target="/etc/oauth2/" Default="" Mode="rw" Description="Container Path: /etc/oauth2/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/oauth2_test/</Config>
+    <Config Name="Host Path 1" Target="/etc/oauth2/" Default="" Mode="rw" Description="Container Path: /etc/oauth2/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/oauth2/</Config>
 </Container>
