@@ -48,7 +48,7 @@ docker exec boinc boinccmd &amp;lt;args&amp;gt;
         </Variable>
     </Environment>
     <WebUI/>
-    <Icon>https://gitlab.squishedmooo.com/cheesemarathon/docker-templates/raw/master/images/boinc.png</Icon>
+    <Icon>https://github.com/cheesemarathon/docker-templates/raw/master/images/boinc.png</Icon>
     <Config Name="App Data" Target="/var/lib/boinc" Default="/mnt/user/appdata/boinc" Mode="rw" Description="Container Path: /var/lib/boinc" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/boinc</Config>
     <Config Name="BOINC_GUI_RPC_PASSWORD" Target="BOINC_GUI_RPC_PASSWORD" Default="" Mode="" Description="Container Variable: BOINC_GUI_RPC_PASSWORD" Type="Variable" Display="always" Required="true" Mask="true"></Config>
     <Config Name="BOINC_CMD_LINE_OPTIONS" Target="BOINC_CMD_LINE_OPTIONS" Default="" Mode="" Description="Container Variable: BOINC_CMD_LINE_OPTIONS" Type="Variable" Display="always" Required="true" Mask="false">--allow_remote_gui_rpc</Config>
