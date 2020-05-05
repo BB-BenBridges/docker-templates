@@ -16,7 +16,7 @@ Please visit support thread for install / setup instructions</Overview>
     <Registry>https://quay.io/repository/pusher/oauth2_proxy</Registry>
     <GitHub>https://github.com/pusher/oauth2_proxy</GitHub>
     <Repository>quay.io/pusher/oauth2_proxy</Repository>
-    <PostArgs>-config=/etc/oauth2/oauth2_proxy.cfg</PostArgs>
+    <PostArgs>--config=/etc/oauth2/oauth2_proxy.cfg</PostArgs>
     <Network>bridge</Network>
     <Networking>
         <Mode>bridge</Mode>
