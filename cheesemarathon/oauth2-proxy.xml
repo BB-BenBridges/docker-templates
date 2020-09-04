@@ -8,7 +8,9 @@
     <DonateImg>https://az743702.vo.msecnd.net/cdn/kofi4.png?v=0</DonateImg>
     <Description>A reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.&#xD;
 &#xD;
-Please visit support thread for install / setup instructions</Description>
+Please visit support thread for install / setup instructions
+    Bitnami have released a docker image to docker hub which unRAID can auto update, however it does not build directly from the oauth2-proxy repo so the code could be altered.
+    If you wish to use this image anyway, change the repository to bitnami/oauth2-proxy</Description>
     <Overview>A reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.&#xD;
 &#xD;
 Please visit support thread for install / setup instructions</Overview>
