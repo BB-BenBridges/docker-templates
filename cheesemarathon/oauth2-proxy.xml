@@ -15,7 +15,7 @@ Please visit support thread for install / setup instructions</Overview>
     <Support>https://lime-technology.com/forums/topic/54183-support-cheesemarathons-repo/</Support>
     <Registry>https://quay.io/repository/pusher/oauth2_proxy</Registry>
     <GitHub>https://github.com/pusher/oauth2_proxy</GitHub>
-    <Repository>quay.io/pusher/oauth2_proxy</Repository>
+    <Repository>quay.io/oauth2-proxy/oauth2-proxy</Repository>
     <PostArgs>--config=/etc/oauth2/oauth2_proxy.cfg</PostArgs>
     <Network>bridge</Network>
     <Networking>
