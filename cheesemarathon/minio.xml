@@ -48,12 +48,13 @@ world with over 157M+ docker pulls</Overview>
             <Mode/>
         </Variable>
     </Environment>
-    <PostArgs>server /data</PostArgs>
-    <WebUI>http://[IP]:[PORT:9768]/</WebUI>
+    <PostArgs>server /data --console-address ":9001"</PostArgs>
+    <WebUI>http://[IP]:[PORT:9769]/</WebUI>
     <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/minio.png</Icon>
     <Config Name="Web UI" Target="9000" Default="9768" Mode="tcp" Description="Container Port: 9000" Type="Port" Display="always" Required="true" Mask="false">9768</Config>
+    <Config Name="Console UI" Target="9001" Default="9769" Mode="tcp" Description="Container Port: 9001" Type="Port" Display="always" Required="true" Mask="false">9769</Config>
     <Config Name="Data" Target="/data" Default="" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false"></Config>
     <Config Name="Config" Target="/root/.minio" Default="" Mode="rw" Description="Container Path: /root/.minio" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/minio</Config>
-    <Config Name="MINIO_ACCESS_KEY" Target="MINIO_ACCESS_KEY" Default="" Mode="" Description="Container Variable: MINIO_ACCESS_KEY" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-    <Config Name="MINIO_SECRET_KEY" Target="MINIO_SECRET_KEY" Default="" Mode="" Description="Container Variable: MINIO_SECRET_KEY" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+    <Config Name="MINIO_ROOT_USER" Target="MINIO_ROOT_USER" Default="" Mode="" Description="Container Variable: MINIO_ROOT_USER" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+    <Config Name="MINIO_ROOT_PASSWORD" Target="MINIO_ROOT_PASSWORD" Default="" Mode="" Description="Container Variable: MINIO_ROOT_PASSWORD" Type="Variable" Display="always" Required="true" Mask="true"></Config>
 </Container>
