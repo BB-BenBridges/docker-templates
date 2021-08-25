@@ -49,7 +49,7 @@ world with over 157M+ docker pulls</Overview>
         </Variable>
     </Environment>
     <PostArgs>server /data --console-address ":9001"</PostArgs>
-    <WebUI>http://[IP]:[PORT:9769]/</WebUI>
+    <WebUI>http://[IP]:[PORT:9001]/</WebUI>
     <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/minio.png</Icon>
     <Config Name="Web UI" Target="9000" Default="9768" Mode="tcp" Description="Container Port: 9000" Type="Port" Display="always" Required="true" Mask="false">9768</Config>
     <Config Name="Console UI" Target="9001" Default="9769" Mode="tcp" Description="Container Port: 9001" Type="Port" Display="always" Required="true" Mask="false">9769</Config>
