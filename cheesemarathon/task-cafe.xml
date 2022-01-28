@@ -24,7 +24,7 @@ Setup: Please install Postgresql first and then fill in the conncetion details b
                 </Port>
         </Publish>
     </Networking>
-    <WebUI>http://[IP]:[PORT:3298]/</WebUI>
+    <WebUI>http://[IP]:[PORT:3333]/</WebUI>
     <Environment>
         <Variable>
             <Value>192.168.1.41</Value>
