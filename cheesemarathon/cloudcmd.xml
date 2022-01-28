@@ -56,7 +56,7 @@ Set Mount Point to the directory you want to be able to access in the browser. D
 			<Mode/>
 		</Variable>
 	</Environment>
-	<WebUI>http://[IP]:[PORT:8765]</WebUI>
+	<WebUI>http://[IP]:[PORT:8000]</WebUI>
 	<Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/cloudcmdLogo.png</Icon>
 	<Config Name="Mount Path" Target="/UNRAID" Default="" Mode="rw" Description="Container Path: /UNRAID" Type="Path" Display="always" Required="true" Mask="false">/mnt/user</Config>
 	<Config Name="Port" Target="8000" Default="8765" Mode="tcp" Description="Container Port: 8000" Type="Port" Display="always" Required="true" Mask="false">8765</Config>
