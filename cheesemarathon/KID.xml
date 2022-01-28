@@ -83,7 +83,7 @@ Default Password: admin</Overview>
 			<Mode>rw</Mode>
 		</Volume>
 	</Data>
-	<WebUI>http://[IP]:[PORT:4686]</WebUI>
+	<WebUI>http://[IP]:[PORT:8080]</WebUI>
 	<Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/KID.png</Icon>
 	<Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
 	<Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
