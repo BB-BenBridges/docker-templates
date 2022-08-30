@@ -51,7 +51,7 @@
     <Data>
         <Volume>
             <HostDir>/mnt/user/appdata/diyHue</HostDir>
-            <ContainerDir>/opt/hue-emulator/export/</ContainerDir>
+            <ContainerDir>/opt/hue-emulator/config/</ContainerDir>
             <Mode>rw</Mode>
         </Volume>
     </Data>
@@ -70,7 +70,7 @@
     <WebUI>http://[IP]:[PORT:80]</WebUI>
     <Icon>https://raw.githubusercontent.com/cheesemarathon/docker-templates/master/images/diyhue.png</Icon>
     <Labels/>
-    <Config Name="App Data" Target="/opt/hue-emulator/export/" Default="" Mode="rw" Description="Container Path: /opt/hue-emulator/export/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/diyHue</Config>
+    <Config Name="App Data" Target="/opt/hue-emulator/config/" Default="" Mode="rw" Description="Container Path: /opt/hue-emulator/config/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/diyHue</Config>
     <Config Name="80" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">80</Config>
     <Config Name="443" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">443</Config>
     <Config Name="1900" Target="1900" Default="1900" Mode="udp" Description="Container Port: 1900" Type="Port" Display="always" Required="true" Mask="false">1900</Config>
