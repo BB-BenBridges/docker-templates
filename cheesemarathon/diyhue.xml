@@ -21,6 +21,7 @@
     <Registry>https://hub.docker.com/r/diyhue/core/</Registry>
     <GitHub>https://github.com/mariusmotea/diyHue</GitHub>
     <Repository>diyhue/core:latest</Repository>
+    <Project>https://diyhue.org/</Project>
     <Network>br0</Network>
     <MyIP></MyIP>
     <Networking>
