@@ -17,7 +17,7 @@
     Find more info at the diyHue GitHub wiki: https://github.com/mariusmotea/diyHue/wiki
     To setup just set an IP address in the network settings, along with setting the MAC and IP variabales with the values for the br0 network
     </Overview>
-    <Support>https://lime-technology.com/forums/topic/54183-support-cheesemarathons-repo/</Support>
+    <Support>https://forums.unraid.net/topic/54183-support-cheesemarathons-repo/</Support>
     <Registry>https://hub.docker.com/r/diyhue/core/</Registry>
     <GitHub>https://github.com/mariusmotea/diyHue</GitHub>
     <Repository>diyhue/core:latest</Repository>
